@@ -1,0 +1,9 @@
+apiVersion: enmasse.io/v1alpha1
+kind: Address
+metadata:
+    name: user5demoalerts.mytopic
+spec:
+    address: mytopic
+    type: multicast
+    plan: alerts-multicast
+

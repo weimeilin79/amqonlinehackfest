@@ -16,3 +16,7 @@ addressPlans:
 resources:
 - name: router
   max: 2.0
+- name: broker
+  max: 0.0
+- name: aggregate
+  max: 2.0
