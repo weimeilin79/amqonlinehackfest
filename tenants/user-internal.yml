@@ -1,12 +1,14 @@
 apiVersion: user.enmasse.io/v1alpha1
 kind: MessagingUser
 metadata:
-  name: online.vertxClient
+  name: online.internal
 spec:
-  username: vertxClient
+  username: internal
   authentication:
     type: password
     password: aGFja2Zlc3Q= # Base64 encoded hackfest
   authorization:
-    - addresses: ["input_online"]
+    - addresses: ["inputonline","inputbatch"]
+      operations: ["recv"]
+    - addresses: ["mytopic","result*"]
       operations: ["send"]
