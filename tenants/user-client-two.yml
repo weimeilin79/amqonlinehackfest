@@ -10,5 +10,5 @@ spec:
   authorization:
     - addresses: ["inputbatch"]
       operations: ["send"]
-    - address: ["customer*","mytopic"]
+    - address: ["customer*", "mytopic"]
       operations: ["recv"]
