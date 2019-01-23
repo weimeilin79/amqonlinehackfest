@@ -1,8 +1,8 @@
 apiVersion: enmasse.io/v1alpha1
 kind: Address
 metadata:
-    name: online.inputqueue
+    name: online.inputonlinequeue
 spec:
-    address: inputqueue
+    address: inputonlinequeue
     type: queue
     plan: online-queue
