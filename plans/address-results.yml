@@ -11,6 +11,6 @@ longDescription: Creates the queue for all customer result queue.
 addressType: queue
 requiredResources:
 - name: router
-  credit: 0.001
+  credit: 0.1
 - name: broker
-  credit: 0.01
+  credit: 0.1

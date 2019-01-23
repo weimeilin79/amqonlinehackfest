@@ -11,6 +11,6 @@ longDescription: Creates the Online queue for input_online.
 addressType: queue
 requiredResources:
 - name: router
-  credit: 0.001
+  credit: 0.2
 - name: broker
-  credit: 0.01
+  credit: 0.3

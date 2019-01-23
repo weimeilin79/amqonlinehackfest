@@ -11,6 +11,6 @@ longDescription: Creates the  topic for alerts.
 addressType: multicast
 requiredResources:
 - name: router
-  credit: 0.1
+  credit: 0.2
 - name: broker
   credit: 0.0
