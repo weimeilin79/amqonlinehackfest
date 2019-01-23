@@ -1,0 +1,16 @@
+apiVersion: admin.enmasse.io/v1beta1
+kind: AddressPlan
+metadata:
+  name: results-queue
+  labels:
+    app: enmasse
+displayName: Online Queue
+displayOrder: 0
+shortDescription: Creates the queue for all customer result queue.
+longDescription: Creates the queue for all customer result queue.
+addressType: queue
+requiredResources:
+- name: router
+  credit: 0.001
+- name: broker
+  credit: 0.01

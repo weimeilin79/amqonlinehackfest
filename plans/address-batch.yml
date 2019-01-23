@@ -1,0 +1,16 @@
+apiVersion: admin.enmasse.io/v1beta1
+kind: AddressPlan
+metadata:
+  name: batch-queue
+  labels:
+    app: enmasse
+displayName: Batch Queue
+displayOrder: 0
+shortDescription: Creates the  queue for input_batch.
+longDescription: Creates the  queue for input_batch.
+addressType: queue
+requiredResources:
+- name: router
+  credit: 0.001
+- name: broker
+  credit: 0.01
