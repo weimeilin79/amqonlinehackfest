@@ -4,11 +4,11 @@ metadata:
   name: alerts-multicast
   labels:
     app: enmasse
-displayName: Alerts multicast
+displayName: Alerts multicast topic
 displayOrder: 0
-shortDescription: Creates the  queue for input_batch.
-longDescription: Creates the  queue for input_batch.
+shortDescription: Creates the  topic for alerts.
+longDescription: Creates the  topic for alerts.
 addressType: multicast
 requiredResources:
 - name: router
-  credit: 0.001
+  credit: 0.1

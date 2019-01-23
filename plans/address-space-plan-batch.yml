@@ -6,10 +6,10 @@ metadata:
     app: enmasse
   annotations:
     enmasse.io/defined-by: infraconfig-batch
-displayName: Online Plan
+displayName: Online Batch Plan
 displayOrder: 0
 shortDescription: A plan for Batch 
-longDescription:A plan for Batch address space
+longDescription: A plan for Batch address space
 addressSpaceType: standard
 addressPlans:
 - batch-queue

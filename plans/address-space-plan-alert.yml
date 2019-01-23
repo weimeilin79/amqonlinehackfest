@@ -6,18 +6,13 @@ metadata:
     app: enmasse
   annotations:
     enmasse.io/defined-by: infraconfig-alert
-displayName: Online Plan
+displayName: Alert Plan
 displayOrder: 0
 shortDescription: A plan for Alerts
-longDescription:A plan for Alerts address space
-uuid: 74b9a40e-117e-11e8-b4e1-507b9def37d9
+longDescription: A plan for Alerts address space
 addressSpaceType: standard
 addressPlans:
 - alerts-multicast
 resources:
 - name: router
   max: 2.0
-- name: broker
-  max: 2.0
-- name: aggregate
-  max: 4.0
