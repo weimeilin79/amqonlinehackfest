@@ -1,0 +1,8 @@
+apiVersion: enmasse.io/v1alpha1
+kind: AddressSpace
+metadata:
+  name: user5demoalerts
+spec:
+  type: standard
+  plan: alert-plan
+
