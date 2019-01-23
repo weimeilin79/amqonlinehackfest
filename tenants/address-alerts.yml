@@ -4,5 +4,5 @@ metadata:
     name: alerts.mytopic
 spec:
     address: mytopic
-    type: topic
+    type: multicast
     plan: alerts-multicast

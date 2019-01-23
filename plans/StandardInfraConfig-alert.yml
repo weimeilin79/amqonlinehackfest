@@ -14,3 +14,8 @@ spec:
     resources:
       memory: 512Mi
     linkCapacity: 250
+  broker:
+    resources:
+      memory: 0Mi
+      storage: 0Gi
+    addressFullPolicy: FAIL
