@@ -1,8 +1,8 @@
 apiVersion: enmasse.io/v1alpha1
 kind: Address
 metadata:
-    name: batch.inputbatchqueue
+    name: batch.input_batch
 spec:
-    address: inputbatchqueue
+    address: input_batch
     type: queue
     plan: batch-queue
