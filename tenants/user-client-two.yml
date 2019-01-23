@@ -1,7 +1,7 @@
 apiVersion: user.enmasse.io/v1alpha1
 kind: MessagingUser
 metadata:
-  name: online.clienttwo
+  name: batch.clienttwo
 spec:
   username: clienttwo
   authentication:
