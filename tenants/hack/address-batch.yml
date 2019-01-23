@@ -1,0 +1,8 @@
+apiVersion: enmasse.io/v1alpha1
+kind: Address
+metadata:
+    name: online.inputbatch
+spec:
+    address: inputbatch
+    type: queue
+    plan: batch-queue
