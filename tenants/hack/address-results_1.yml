@@ -1,0 +1,8 @@
+apiVersion: enmasse.io/v1alpha1
+kind: Address
+metadata:
+    name: online.result1
+spec:
+    address: result1
+    type: queue
+    plan: results-queue
