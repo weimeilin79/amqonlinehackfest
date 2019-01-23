@@ -1,0 +1,13 @@
+apiVersion: user.enmasse.io/v1alpha1
+kind: MessagingUser
+metadata:
+  name: batch.writeuser
+spec:
+  username: writeuser
+  authentication:
+    type: password
+    password: aGFja2Zlc3Q= # Base64 encoded hackfest
+  authorization:
+    - addresses: ["inputbatch"]
+      operations: ["send"]
+

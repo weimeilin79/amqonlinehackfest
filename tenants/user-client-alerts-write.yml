@@ -1,16 +1,13 @@
 apiVersion: user.enmasse.io/v1alpha1
 kind: MessagingUser
 metadata:
-  name: online.clientwo
+  name: alerts.writeuser
 spec:
-  username: clienttwo
+  username: writeuser
   authentication:
     type: password
     password: aGFja2Zlc3Q= # Base64 encoded hackfest
   authorization:
-    - addresses: ["inputbatch"]
+    - addresses: ["mytopic"]
       operations: ["send"]
-    - addresses: ["result*", "mytopic"]
-      operations: ["recv"]
-
 
