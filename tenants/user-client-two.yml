@@ -1,7 +1,7 @@
 apiVersion: user.enmasse.io/v1alpha1
 kind: MessagingUser
 metadata:
-  name: batch.clienttwo
+  name: online.clientwo
 spec:
   username: clienttwo
   authentication:
@@ -10,5 +10,7 @@ spec:
   authorization:
     - addresses: ["inputbatch"]
       operations: ["send"]
-    - address: ["customer*", "mytopic"]
+    - addresses: ["result*", "mytopic"]
       operations: ["recv"]
+
+
