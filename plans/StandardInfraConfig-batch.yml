@@ -15,7 +15,7 @@ spec:
       storage: 3Gi
     addressFullPolicy: FAIL
   router:
-    minReplicas: 1
+    minReplicas: 2
     resources:
       memory: 512Mi
     linkCapacity: 250
