@@ -1,9 +1,9 @@
 apiVersion: user.enmasse.io/v1alpha1
 kind: MessagingUser
 metadata:
-  name: online.inputsender
+  name: online.onlinesender
 spec:
-  username: inputsender
+  username: onlinesender
   authentication:
     type: password
     password: aGFja2Zlc3Q= # Base64 encoded hackfest

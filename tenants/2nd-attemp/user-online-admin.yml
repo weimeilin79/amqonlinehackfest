@@ -1,0 +1,12 @@
+apiVersion: user.enmasse.io/v1alpha1
+kind: MessagingUser
+metadata:
+  name: online.adminuser
+spec:
+  username: adminuser
+  authentication:
+    type: password
+    password: aGFja2Zlc3Q= # Base64 encoded hackfest
+  authorization:
+      - operations: ["manage"]
+

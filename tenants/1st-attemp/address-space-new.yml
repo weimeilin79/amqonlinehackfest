@@ -1,0 +1,16 @@
+apiVersion: enmasse.io/v1alpha1
+kind: AddressSpace
+metadata:
+  name: newspace
+  annotations:
+    enmasse.io/realm-name: dayone-online 
+spec:
+  type: standard
+  plan: alert-plan
+  authenticationService:
+    type: external
+    details:
+      host: standard-authservice.amq-online-infra.svc
+      port: 5671
+      caCertSecretName: standard-authservice-cert
+      saslInitHost:  dayone-online

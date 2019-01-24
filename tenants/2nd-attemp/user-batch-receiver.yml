@@ -1,0 +1,14 @@
+apiVersion: user.enmasse.io/v1alpha1
+kind: MessagingUser
+metadata:
+  name: online.batchreceiver
+spec:
+  username: batchreceiver
+  authentication:
+    type: password
+    password: aGFja2Zlc3Q= # Base64 encoded hackfest
+  authorization:
+    - addresses: ["inputbatch"]
+      operations: ["recv"]
+    - addresses: ["mytopic", "result*"]
+      operations: ["send"]

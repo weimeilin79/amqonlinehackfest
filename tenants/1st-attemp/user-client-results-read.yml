@@ -9,5 +9,5 @@ spec:
     password: aGFja2Zlc3Q= # Base64 encoded hackfest
   authorization:
      - addresses: ["result*"]
-      operations: ["recv"]
+       operations: ["recv"]
 
