@@ -1,0 +1,32 @@
+# Servlet Container & Health Setup
+server:
+  address: 0.0.0.0
+management:
+  address: 0.0.0.0
+  port: 8081
+endpoints:
+  enabled: false
+  health:
+    enabled: true
+    
+# Camel Spring Boot
+camel:
+  springboot:
+    name: InputOnlineProcessor
+
+# AMQPHub
+amqphub:
+  amqp10jms:
+    pool:
+      enabled: true
+    remote-url: amqp://localhost:5672
+    #username: amqpuser
+    #password: password
+
+# Logging
+logging:
+  config: classpath:logback.xml
+  level:
+    #org.apache.camel: DEBUG
+    org.apache.camel.examples: DEBUG
+    

@@ -1,0 +1,7 @@
+apiVersion: "v1"
+kind: "ConfigMap"
+metadata:
+  name: input-online-processor-configmap
+data:
+  application.properties: |-
+    amqphub.amqp10jms.remote-url=amqp://messaging-qvekprmj3e.amq-online-infra.svc:5672
