@@ -1,0 +1,20 @@
+apiVersion: enmasse.io/v1alpha1
+kind: AddressSpace
+metadata:
+  name: eng-addressspace
+spec:
+  type: brokered
+  plan: eng-addressspaceplan
+  endpoints:
+    - name: messaging
+      service: messaging
+      cert:
+        provider: openshift
+    - name: console
+      service: console
+      expose:
+        type: route
+        routeTlsTermination: reencrypt
+        routeServicePort: https
+      cert:
+        provider: openshift

@@ -1,0 +1,10 @@
+apiVersion: admin.enmasse.io/v1alpha1
+kind: AddressPlan
+metadata:
+  name: eng-addressplan
+  labels:
+    app: enmasse
+addressType: queue
+requiredResources:
+- name: broker
+  credit: 0.5

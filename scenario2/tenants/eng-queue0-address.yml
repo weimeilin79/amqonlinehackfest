@@ -1,0 +1,8 @@
+apiVersion: enmasse.io/v1alpha1
+kind: Address
+metadata:
+    name: eng-addressspace.queue0
+spec:
+    address: queue0
+    type: queue
+    plan: eng-addressplan

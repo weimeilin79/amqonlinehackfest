@@ -1,0 +1,11 @@
+apiVersion: admin.enmasse.io/v1alpha1
+kind: AddressSpacePlan
+metadata:
+  name: eng-addressspaceplan
+  labels:
+    app: enmasse
+  annotations:
+    enmasse.io/defined-by: eng-infraconfig
+addressSpaceType: brokered
+addressPlans:
+- eng-addressplan
