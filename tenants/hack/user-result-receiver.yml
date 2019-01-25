@@ -1,0 +1,12 @@
+apiVersion: user.enmasse.io/v1alpha1
+kind: MessagingUser
+metadata:
+  name: online.resultreceiver
+spec:
+  username: resultreceiver
+  authentication:
+    type: password
+    password: aGFja2Zlc3Q= # Base64 encoded hackfest
+  authorization:
+    - addresses: ["result*", "mytopic"]
+      operations: ["recv"]
