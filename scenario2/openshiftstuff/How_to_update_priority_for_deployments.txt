@@ -2,6 +2,6 @@ Apply the priority class to the openshift environment that are needed like the f
 oc apply -f prod_high_priority_pods.yaml
 
 Edit the deployment configurations and add the field:
-priorityClassName: high-priority
+priorityClassName: prod-high-priority
 
 https://docs.openshift.com/container-platform/3.11/admin_guide/scheduling/priority_preemption.html
