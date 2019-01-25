@@ -8,5 +8,5 @@ spec:
     type: password
     password: aGFja2Zlc3Q= # Base64 encoded hackfest
   authorization:
-    - addresses: ["queue*"]
+    - addresses: ["queue0"]
       operations: ["send","recv"]
